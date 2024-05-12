@@ -28,5 +28,11 @@ class ShoppingCart with ChangeNotifier {
     }
     notifyListeners();
   }
+
+  int cartCount() {
+  notifyListeners();
+  return _shoppingList.length;
+  
+  }
 }
 
