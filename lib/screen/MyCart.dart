@@ -6,12 +6,6 @@ import "../provider/shoppingcart_provider.dart";
 class MyCart extends StatelessWidget {
   const MyCart({super.key});
 
-
-/*Consumer<Model>(
-Builder: (context,value,child){
-  return
-  });*/
-
 Widget computeCost() {
 return Consumer<ShoppingCart>(builder: (context, cart, child) {
 return Text("Total: ${cart.cartTotal}");
